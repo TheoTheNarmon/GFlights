@@ -17,7 +17,7 @@ export class Airport {
     }
 }
 
-export const airports: Airport[] = [
+export const Airports: Airport[] = [
     new Airport(1, "A1", "Jhon F Kennedy", "New york"),
     new Airport(2, "A2", "Airport of Toronto", "Toronto"),
     new Airport(3, "A3", "Airport of Paris", "Paris"),
