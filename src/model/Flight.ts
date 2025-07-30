@@ -49,4 +49,12 @@ export const Flights:Flight[] = [
     new Flight("4","A6","A2","A1","2022-07-15","2024-07-15",20,"Airport of Toronto","Jhon F Kennedy"),
     new Flight("5","A7","A4","A2","2025-06-1","2024-06-2",1500,"Aeropuerto de Ezeiza","Airport of Toronto"),
     new Flight("6","A8","A1","A3","2024-02-10","2024-02-11",2600,"Jhon F Kennedy","Airport of Paris"),
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza")
 ]
