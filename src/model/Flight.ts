@@ -54,7 +54,7 @@ export const Flights:Flight[] = [
     new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
     new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
     new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
-    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
-    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza"),
-    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza")
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440),
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,undefined,"Aeropuerto de Ezeiza"),
+    new Flight("7","A1","A1","A4","2025-07-01","2025-07-02",1440,"Jhon F Kennedy","Aeropuerto de Ezeiza", 1500)
 ]

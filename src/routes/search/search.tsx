@@ -34,12 +34,15 @@ export default function Search(){
     return(
         <div style={{justifyContent:'center', justifyItems:'center', marginTop:'1%'}}>
 
+            <div className="imageContainer">
+                <img className="image" src="https://images.unsplash.com/photo-1596251822183-f0cf75473b67?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8"></img>
+            </div>
             <SearchBox
                 airports={Airports}
                 function={handleChangeAirport}
             />
 
-            <div className="flightsGrid">
+            <div className="flightsFlex">
                 {flights.map((flight)=>(
                     <FlightBox fly={flight}></FlightBox>
                 ))}

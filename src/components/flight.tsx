@@ -7,13 +7,13 @@ interface Props{
 
 export default function FlightBox(props:Props){
     return(
-        <Box sx={{display:'flex', width:'90%', height:'100px', justifyItems:'center', justifyContent:'center',alignItems:'center', gap:'1%', border:'1px solid black', borderRadius:'1rem', marginTop:'0.5%', backgroundColor:'darkgrey'}}>
-            <h3>{props.fly.airline}</h3>
-            <h3>{props.fly.departureTime}-{props.fly.arrivalTime}</h3>
-            <h3>{props.fly.departureTime}min</h3>
-            <h3>{props.fly.departureAirportName ?? props.fly.departureAirportCode} to {props.fly.arrivalAirportName ?? props.fly.arrivalAirportCode}</h3>
-            <h3>${props.fly.price ?? '-'}</h3>
-            <h3>{props.fly.status ?? ""}</h3>
+        <Box sx={{display:'flex', width:'70%', height:'100px', justifyItems:'center', justifyContent:'center',alignItems:'center', gap:'1%', border:'1px solid black', borderRadius:'1rem', marginTop:'0.5%', backgroundColor:'rgb(56, 56, 56);'}}>
+            <h2>{props.fly.airline}</h2>
+            <h2>{props.fly.departureTime}-{props.fly.arrivalTime}</h2>
+            <h2>{props.fly.departureTime}min</h2>
+            <h2>{props.fly.departureAirportName ?? props.fly.departureAirportCode} to {props.fly.arrivalAirportName ?? props.fly.arrivalAirportCode}</h2>
+            <h2>${props.fly.price ?? '-'}</h2>
+            <h2>{props.fly.status ?? ""}</h2>
         </Box>
     )
 }
