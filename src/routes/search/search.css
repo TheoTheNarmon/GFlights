@@ -1,0 +1,21 @@
+.flightsFlex{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1%;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image{
+    width: 1500px;
+    height: 500px;
+    margin: 1%;
+}
+.imageContainer{
+    width: 100%;
+    margin: '0 auto';
+    display: flex;
+    justify-content: center;   
+}

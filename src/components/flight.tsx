@@ -7,10 +7,13 @@ interface Props{
 
 export default function FlightBox(props:Props){
     return(
-        <Box sx={{border:'10 black 10'}}>
-            <h4>From: {props.fly.departureAirportName}</h4>
-            <h4>For: {props.fly.arrivalAirportName}</h4>
-            <h5>{props.fly.durationMinutes}min</h5>
+        <Box sx={{display:'flex', width:'70%', height:'100px', justifyItems:'center', justifyContent:'center',alignItems:'center', gap:'1%', border:'1px solid black', borderRadius:'1rem', marginTop:'0.5%', backgroundColor:'rgb(56, 56, 56);'}}>
+            <h2>{props.fly.airline}</h2>
+            <h2>{props.fly.departureTime}-{props.fly.arrivalTime}</h2>
+            <h2>{props.fly.departureTime}min</h2>
+            <h2>{props.fly.departureAirportName ?? props.fly.departureAirportCode} to {props.fly.arrivalAirportName ?? props.fly.arrivalAirportCode}</h2>
+            <h2>${props.fly.price ?? '-'}</h2>
+            <h2>{props.fly.status ?? ""}</h2>
         </Box>
     )
 }
