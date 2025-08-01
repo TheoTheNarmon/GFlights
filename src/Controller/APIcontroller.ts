@@ -11,13 +11,13 @@ const Host = 'sky-scrapper.p.rapidapi.com'
 
 export const getAirports = async (): Promise<AirportSearchResultDTO[]> =>{
     const response = await axios.get('{Url}/api/v1/flights/searchAirport',{
-        headers:{
-            'X-RapidAPI-Key': '${API_KEY}',
-            'X-RapidAPI-Host': '${Host}'
-        },
         params:{
             query: 'new',
             locale: 'en-US'
+        },
+        headers:{
+            'X-RapidAPI-Key': '${API_KEY}',
+            'X-RapidAPI-Host': '${Host}'
         }
     })
     console.log(response.data)
@@ -26,16 +26,16 @@ export const getAirports = async (): Promise<AirportSearchResultDTO[]> =>{
 
 export const getFlights = async (origin: Airport, destiny: Airport): Promise<FlightDTO[]> =>{
     const response = await axios.get('{Url}/api/v2/searchFlights',{
-        headers:{
-            'X-RapidAPI-Key': '${API_KEY}',
-            'X-RapidAPI-Host': '${Host}'
-        },
         params:{
             originSkyId: origin.code,
             destinationSkyId: destiny,Code,
             originEntityId: origin.id,
             destinationEntityId: destiny.id,
             date: '2024-07-01' //random day
+        },
+        headers:{
+            'X-RapidAPI-Key': '${API_KEY}',
+            'X-RapidAPI-Host': '${Host}'
         }
     })
     console.log(response.data)
