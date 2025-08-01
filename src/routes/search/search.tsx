@@ -8,6 +8,7 @@ import { searchFlight } from "../../services/flightService";
 import FlightBox from "../../components/flight";
 import SearchBox from "../../components/searchBox/searchBox";
 import './search.css'
+import Header from "../../components/header/header";
 
 export default function Search(){
     const [airportOne, setAirportOne] = useState<Airport>()
@@ -34,6 +35,7 @@ export default function Search(){
     return(
         <div style={{justifyContent:'center', justifyItems:'center', marginTop:'1%'}}>
 
+            <Header></Header>
             <div className="imageContainer">
                 <img className="image" src="https://images.unsplash.com/photo-1596251822183-f0cf75473b67?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8"></img>
             </div>
