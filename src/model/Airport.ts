@@ -18,9 +18,11 @@ export class Airport {
 }
 
 export const Airports: Airport[] = [
-    new Airport(1, "A1", "Jhon F Kennedy", "New york"),
-    new Airport(2, "A2", "Airport of Toronto", "Toronto"),
-    new Airport(3, "A3", "Airport of Paris", "Paris"),
-    new Airport(4, "A4", "Aeropuerto de Ezeiza", "Buenos Aires"),
-    new Airport(5, "A5", "Aeropuerto do Rio", "Rio do janeiro")
+    new Airport(1, "JFK", "Jhon F Kennedy", "New York"),
+    new Airport(2, "EWR", "New York Newark", "United States"),
+    new Airport(3, "LGA", "New York LaGuardia", "United States"),
+    new Airport(4, "SWF", "Stewart International", "New York"),
+    new Airport(5, "NCL", "Newcastle", "United Kingdom"),
+    new Airport(6, "NQY", "Newquay", "United Kingdom"),
+    new Airport(7, "NZ", "New Zealand", "New Zealand")
 ]

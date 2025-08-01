@@ -21,8 +21,8 @@ export default function FlightBox(props:Props){
             backgroundColor:'rgb(56, 56, 56);'
             }}>
             <h2>{props.fly.airline}</h2>
-            <h2>{props.fly.departureTime}-{props.fly.arrivalTime}</h2>
-            <h2>{props.fly.departureTime}min</h2>
+            <h2>{props.fly.departureTime} to {props.fly.arrivalTime}</h2>
+            <h2>{props.fly.durationMinutes}min</h2>
             <h2>{props.fly.departureAirportName ?? props.fly.departureAirportCode} to {props.fly.arrivalAirportName ?? props.fly.arrivalAirportCode}</h2>
             <h2>${props.fly.price ?? '-'}</h2>
             <h2>{props.fly.status ?? ""}</h2>
