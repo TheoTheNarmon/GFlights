@@ -31,16 +31,20 @@ export class NearAirportDTO{
 }}
 
 export interface AirportSearchResultDTO {
-  id: number
-  code: string
-  name: string
-  city: string
+  entityId: number
+  skyId: string
+  title: string
+  suggestionTitle: string
+  subtitle: string
+  entityType: string
+  localizedName: string
+  flightPlaceType: string
 }
-
+/*
 export function fromNearAirport(near:NearAirportDTO){
     return new Airport(near.id,near.code,near.name,near.city)
-}
+}*/
 
 export function fromSearchResultAirport(result:AirportSearchResultDTO){
-    return new Airport(result.id,result.code,result.name,result.city)
+    return new Airport(result.entityId,result.skyId,result.title,result.localizedName)
 }

@@ -15,19 +15,18 @@ export default function Search(){
     const [airportOne, setAirportOne] = useState<Airport>()
     const [airportTwo, setAirportTwo] = useState<Airport>()
     const [flights, setFlights] = useState<Flight[]>([])
-
     const [Airports, setAirports] = useState<Airport[]>([])
-    const [Flights, setAllFlights] = useState<Flight[]>([])
 
-    useEffect(() =>{
+
+    async function handleSearch (){
         if(airportOne && airportTwo){
-            setFlights(searchFlight(airportOne.code,airportTwo.code,Flights))
+            setFlights(await getAllFlights(airportOne,airportTwo))
         }
-    })
+    }
 
     useInitialize(async ()=>{
         setAirports(await getAllAirports())
-        setAllFlights(await getAllFlights())
+
     })
 
 
@@ -38,6 +37,7 @@ export default function Search(){
         else{
             setAirportTwo(e)
         }
+        handleSearch()
     }
 
     return(
