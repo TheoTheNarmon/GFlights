@@ -1,25 +1,33 @@
 import { TextField } from "@mui/material";
 import { useEffect, useState } from "react";
-import { Flight, Flights } from "../../model/Flight";
-import { searchAirport } from "../../services/airportService";
-import { Airport, Airports } from "../../model/Airport";
+import { Flight } from "../../model/Flight";
+import { getAllAirports, searchAirport } from "../../services/airportService";
+import { Airport } from "../../model/Airport";
 import { flattenDiagnosticMessageText } from "typescript";
-import { searchFlight } from "../../services/flightService";
+import { getAllFlights, searchFlight } from "../../services/flightService";
 import FlightBox from "../../components/flight";
 import SearchBox from "../../components/searchBox/searchBox";
 import './search.css'
 import Header from "../../components/header/header";
+import { useInitialize } from "../../hooks/hooks";
 
 export default function Search(){
     const [airportOne, setAirportOne] = useState<Airport>()
     const [airportTwo, setAirportTwo] = useState<Airport>()
     const [flights, setFlights] = useState<Flight[]>([])
 
-    useEffect(() =>{
+    const [Airports, setAirports] = useState<Airport[]>([])
+    const [Flights, setAllFlights] = useState<Flight[]>([])
 
+    useEffect(() =>{
         if(airportOne && airportTwo){
             setFlights(searchFlight(airportOne.code,airportTwo.code,Flights))
         }
+    })
+
+    useInitialize(async ()=>{
+        setAirports(await getAllAirports())
+        setAllFlights(await getAllFlights())
     })
 
 
